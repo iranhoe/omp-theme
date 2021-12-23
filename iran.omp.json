@@ -13,9 +13,9 @@
 		  "leading_diamond": "\uE0B6",
 		  "trailing_diamond": "",
 		  "properties": {
-			"prefix": "",
+			"prefix": "\uF489",
 			"mapped_shell_names": {
-			  "pwsh": "\uF489"
+			  "pwsh": " PS"			  
 			}
 		  }
 		},
