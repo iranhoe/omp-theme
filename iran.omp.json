@@ -26,7 +26,8 @@
           "foreground": "#26c6DA",
           "background": "#546E7A",
           "properties": {
-          "postfix": "  "
+        	"postfix": "  ",
+			"wsl_separator": "\uE0B1"
           }
         },
 		{
