@@ -4,18 +4,7 @@
     {
       "type": "prompt",
       "alignment": "left",
-      "segments": [
-		{
-          "type": "os",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#26c6DA",
-          "background": "#546E7A",
-          "properties": {
-        	"postfix": " ",
-			"wsl_separator": " \uE0B1 "
-          }
-        },
+      "segments": [	
 		{
           "type": "session",
           "style": "powerline",
@@ -66,7 +55,29 @@
           "properties": {
             "prefix": " \uE718 "
           }
+		},
+		{
+		  "type": "dotnet",
+		  "style": "powerline",
+		  "powerline_symbol": "\uE0B0",
+		  "foreground": "#ffffff",
+		  "background": "#5A2E90",
+		  "properties": {
+			"prefix": " \uE77F "
+		  }
+		},
+        {
+          "type": "executiontime",
+          "style": "diamond",
+          "foreground": "#ffffff",
+          "background": "#83769C",
+		  "trailing_diamond": "\uE0B0",
+          "properties": {
+            "always_enable": "false",
+           	"prefix": " \uE38B "
+          }
         }
+
 	  ]
     },
 	{
@@ -85,16 +96,17 @@
 		  }
 		},
 		{
-		  "type": "executiontime",
-		  "style": "plain",
-		  "foreground": "#ffffff",
-		  "background": "#83769C",
-		  "properties": {
-			"always_enable": true,
-			"prefix": "羽"
-		  }
-		}, 
-	    {
+          "type": "os",
+          "style": "plain",
+          "foreground": "#26c6DA",
+          "background": "#546E7A",
+          "properties": {
+        	"postfix": " ",
+			"wsl_separator": " \uE0B1 ",
+			"prefix": " "
+          }
+        },
+		{
           "type": "time",
           "style": "diamond",
           "foreground": "#ffffff",
@@ -114,15 +126,12 @@
       "segments": [
         {
           "type": "text",
-          "style": "diamond",
-		  "trailing_diamond": "\uE0B4",
-		  "leading_diamond": "\uE0B6",
+          "style": "plain",
           "foreground": "#7FD5EA",
-		  "background": "#29315A",
           "properties": {
             "prefix": "",
             "text": "\u276F",
-			"postfix": ""
+			"postfix": " "
           }
         }
       ]
