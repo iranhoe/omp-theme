@@ -7,23 +7,24 @@
       "segments": [	
 		{
           "type": "session",
-          "style": "powerline",
+          "style": "diamond",
           "foreground": "#ffffff",
-          "background": "#B4009E",
-          "powerline_symbol": "\uE0B0",
+          "background": "#9A348E",
+          "leading_diamond": "\uE0B6",
           "properties": {
             "prefix": "",
-            "template": " {{ .UserName }}"
+            "template": "{{ .UserName }}"
           }
         },
         {
           "type": "path",
           "style": "powerline",
           "powerline_symbol": "\uE0B0",
-          "foreground": "#2d3436",
-          "background": "#FF9248",
+          "foreground": "#FFFFFF",
+          "background": "#07585C",
           "properties": {
-            "style": "folder"
+            "style": "folder",
+			"prefix": " \uE5FF "
           }
         },
         {
@@ -42,30 +43,10 @@
             "fetch_stash_count": true,
             "fetch_status": true,
             "fetch_upstream_icon": true,
-            "branch_icon": "\uE725",
+            "branch_icon": "\uE725 ",
             "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ .BranchStatus }}{{ if .Working.Changed }} \uF044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}<#ef5350> \uF046 {{ .Staging.String }}</>{{ end }}"
           }
         },
-        {
-          "type": "node",
-          "style": "powerline",
-          "powerline_symbol": "\uE0B0",
-          "foreground": "#ffffff",
-          "background": "#4e903d",
-          "properties": {
-            "prefix": " \uE718 "
-          }
-		},
-		{
-		  "type": "dotnet",
-		  "style": "powerline",
-		  "powerline_symbol": "\uE0B0",
-		  "foreground": "#ffffff",
-		  "background": "#5A2E90",
-		  "properties": {
-			"prefix": " \uE77F "
-		  }
-		},
         {
           "type": "executiontime",
           "style": "diamond",
@@ -97,7 +78,7 @@
 		},
 		{
           "type": "os",
-          "style": "plain",
+          "style": "diamond",
           "foreground": "#26c6DA",
           "background": "#546E7A",
           "properties": {
@@ -106,6 +87,26 @@
 			"prefix": " "
           }
         },
+		{
+		  "type": "dotnet",
+		  "style": "powerline",
+		  "powerline_symbol": "\uE0B0",
+		  "foreground": "#ffffff",
+		  "background": "#5A2E90",
+		  "properties": {
+			"prefix": " \uE77F "
+		  }
+		},
+        {
+          "type": "node",
+          "style": "powerline",
+          "powerline_symbol": "\uE0B0",
+          "foreground": "#ffffff",
+          "background": "#4e903d",
+          "properties": {
+            "prefix": " \uE718 "
+          }
+		},
 		{
           "type": "time",
           "style": "diamond",
